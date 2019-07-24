@@ -17,7 +17,7 @@ optional arguments:
 ```
 Example:
 ```
-python keywords_to_graph.py "cathodic oxygen reduction reaction"
+python keywords_to_graph.py "cathodic oxygen reduction reaction" --topn=100
 ```
 
 Corpus batch process
