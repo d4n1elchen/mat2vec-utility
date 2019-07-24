@@ -16,11 +16,8 @@ text_processor = MaterialsTextProcessor()
 w2v_model = Word2Vec.load("../mat2vec/mat2vec/training/models/pretrained_embeddings")
 tsne_transformer = TSNE(n_components=2)
 
-sentence = "LiCoO2 is a battery cathode material"
-topn = 20
-
-words, _ = text_processor.process(sentence)
-similar_words_result = w2v_model.wv.most_similar(positive=words, topn=topn)
+words, _ = text_processor.process(args.sentence)
+similar_words_result = w2v_model.wv.most_similar(positive=words, topn=args.topn)
 
 similar_words, similar_words_score = zip(*similar_words_result)
 print(similar_words)
