@@ -20,7 +20,7 @@ words, _ = text_processor.process(args.sentence)
 similar_words_result = w2v_model.wv.most_similar(positive=words, topn=args.topn)
 
 similar_words, similar_words_score = zip(*similar_words_result)
-print(similar_words)
+[print(w, '\t', s) for w, s in zip(similar_words, similar_words_score)]
 
 similar_words_vec = w2v_model[similar_words]
 
