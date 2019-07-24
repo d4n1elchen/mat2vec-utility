@@ -21,6 +21,6 @@ similar_words_vec = w2v_model[similar_words]
 
 similar_words_embedded = tsne_transformer.fit_transform(similar_words_vec)
 
-plt.figure(figsize=(16,16))
-plot_utility.plot_tsne(similar_words, similar_words_embedded)
+fig = plt.figure(figsize=(16,8))
+plot_utility.plot_tsne(fig.gca(), similar_words, similar_words_embedded)
 plt.show()
