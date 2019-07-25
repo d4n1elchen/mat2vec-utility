@@ -1,7 +1,12 @@
 # mat2vec-utility
 Some tools that based on mat2vec
 
-Most similar word vis
+Installation
+---
+1. Install mat2vec by instruction from [mat2vec](https://github.com/materialsintelligence/mat2vec).
+2. Navigate to this repo's folder and execute `pip install -r requirement.txt`
+
+Most similar word visualization
 ---
 ```
 usage: keywords_to_graph.py [-h] [--topn TOPN] sentence
