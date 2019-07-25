@@ -3,7 +3,7 @@ Some tools that based on mat2vec
 
 Installation
 ---
-1. Install mat2vec by instruction from [mat2vec](https://github.com/materialsintelligence/mat2vec).
+1. Install mat2vec by instructions in [mat2vec](https://github.com/materialsintelligence/mat2vec).
 2. Navigate to this repo's folder and execute `pip install -r requirement.txt`
 
 Most similar word visualization
